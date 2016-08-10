@@ -4,3 +4,7 @@
 node_modules/
 gulp_modules/config/web.config-compiled.js
 gulp_modules/config/web.config-compiled.js.map
+gulp_modules/config/dirptree.config-compiled.js
+gulp_modules/config/dirptree.config-compiled.js.map
+gulpfile-compiled.js
+gulpfile-compiled.js.map
