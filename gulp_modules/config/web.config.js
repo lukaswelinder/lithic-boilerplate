@@ -4,8 +4,6 @@ const web = {};
 web.pack = require('webpack-stream');
 web.import = require('webpack-load-plugins')();
 
-
-
 // web.log = {
 //   progress: new web.pack.webpack.ProgressPlugin(function(p, m) { console.log(p); }),
 //   complete: function(status) { console.log(status); }
@@ -59,6 +57,8 @@ web.task = {
 
 module.exports = web;
 
+
+/* For importing 3rd party webpack plugins: */
 
 // web.pack_plugins({
 //   pattern: ['*-webpack-plugin','@*/*-webpack-plugin'], // the glob(s) to search for

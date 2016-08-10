@@ -2,3 +2,5 @@
 /app/public/dis
 .idea/
 node_modules/
+gulp_modules/config/web.config-compiled.js
+gulp_modules/config/web.config-compiled.js.map
