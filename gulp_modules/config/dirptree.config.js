@@ -7,27 +7,11 @@ const server_file_tree = {
     {
       name: 'data',
       files: ['data_config.js'],
-      paths: [
-        {
-          name: 'models',
-          files: ['models_index.js']
-        },{
-          name: 'collections',
-          files: ['collections_index.js']
-        },{
-          name: 'db',
-          files: ['db.sql']
-        }
-      ]
+      paths: ['insert', 'update', 'delete', 'query', 'utils']
     },{
       name: 'router',
       files: ['router_config.js'],
-      paths: [
-        {
-          name: 'utils',
-          files: ['utils_index.js']
-        }
-      ]
+      paths: ['utils']
     }
   ]
 };
@@ -41,10 +25,11 @@ const client_file_tree = {
       files: ['dist.log']
     },{
       name: 'assets',
-      paths: [ 'img', 'svg', 'fonts' ]
+      paths: [ 'img', 'svg', 'font' ]
     },{
       name: 'scss',
-      files: ['stylesheet.scss']
+      files: ['stylesheet.scss'],
+      paths: ['layout', 'effects']
     },{
       name: 'jsx',
       files: ['index.jsx'],
@@ -54,7 +39,7 @@ const client_file_tree = {
         'routes',
         {
           name: 'views',
-          paths: [ 'components', 'containers', 'd3' ]
+          paths: [ 'components', 'containers', 'utils' ]
         }
       ]
     }

@@ -4,6 +4,7 @@ const web = {};
 web.pack = require('webpack-stream');
 web.import = require('webpack-load-plugins')();
 
+// :TODO: implement intuitive stdout progress & error logging
 // web.log = {
 //   progress: new web.pack.webpack.ProgressPlugin(function(p, m) { console.log(p); }),
 //   complete: function(status) { console.log(status); }
@@ -29,6 +30,8 @@ web.loaders = [
   }
 ];
 
+// :TODO: implement envify to pass argument variables
+//        (solves React & Redux deployment errors)
 web.plugins = {
   dev: [
     new web.pack.webpack.HotModuleReplacementPlugin()
