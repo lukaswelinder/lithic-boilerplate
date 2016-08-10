@@ -1,0 +1,4 @@
+/app/server/data/db/
+/app/public/dis
+.idea/
+node_modules/
