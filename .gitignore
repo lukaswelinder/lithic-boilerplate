@@ -8,3 +8,13 @@ gulp_modules/config/dirptree.config-compiled.js
 gulp_modules/config/dirptree.config-compiled.js.map
 gulpfile-compiled.js
 gulpfile-compiled.js.map
+app/index-compiled.js
+app/index-compiled.js.map
+app/public/assets/
+app/public/dist/
+app/public/jsx/actions/dragNode-compiled.js
+app/public/jsx/actions/dragNode-compiled.js.map
+app/public/jsx/routes/routes-compiled.js
+app/public/jsx/routes/routes-compiled.js.map
+app/public/jsx/views/Main-compiled.js
+app/public/jsx/views/Main-compiled.js.map

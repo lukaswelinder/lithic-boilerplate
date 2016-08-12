@@ -16,9 +16,6 @@ web.loaders = [
     exclude: /node_modules/,
     loader: 'babel-loader'
   },{
-    test: require.resolve('d3'),
-    loader: 'imports?this=>window'
-  },{
     test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
     loader:"url?limit=10000&mimetype=application/font-woff"
   },{
