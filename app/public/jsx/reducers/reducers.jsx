@@ -1,7 +1,7 @@
-import dragNodeReducer from './dragNodeReducer.jsx'
+import clickReducer from './clickReducer.jsx'
 
 const rootReducer = {
-  node: dragNodeReducer
+  clicks: clickReducer
 };
 
 export default rootReducer
