@@ -19,5 +19,4 @@ app.use(require('./router/utils/route_spa')(router_config.routes));
 app.use(require('koa-static')(router_config.static.root));
 
 
-
 module.exports = app;

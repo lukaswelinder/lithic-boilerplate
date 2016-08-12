@@ -1,5 +1,3 @@
-/app/server/data/db/
-/app/public/dis
 .idea/
 node_modules/
 gulp_modules/config/web.config-compiled.js
@@ -18,3 +16,9 @@ app/public/jsx/routes/routes-compiled.js
 app/public/jsx/routes/routes-compiled.js.map
 app/public/jsx/views/Main-compiled.js
 app/public/jsx/views/Main-compiled.js.map
+app/server/router/utils/req_res_log-compiled.js
+app/server/router/utils/req_res_log-compiled.js.map
+app/server/router/utils/route_spa-compiled.js
+app/server/router/utils/route_spa-compiled.js.map
+gulp_modules/utils_index-compiled.js
+gulp_modules/utils_index-compiled.js.map
