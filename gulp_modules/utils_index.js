@@ -1,3 +1,5 @@
+'use strict';
+
 // bundles all gulp modules for easy namespacing in gulpfile.js
 module.exports = {
   named: require('vinyl-named'),

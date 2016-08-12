@@ -1,4 +1,6 @@
-// configuration of webpack-gulp tasks, required by utils_index
+'use strict';
+
+// configuration of webpack-gulp tasks, imported by 'utils_index.js'
 const web = {};
 
 web.pack = require('webpack-stream');

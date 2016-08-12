@@ -1,4 +1,5 @@
-// task list & dependencies module for gulpfile.js
+'use strict';
+
 const fs = require('fs');
 const gulp = require('gulp');
 const args = require('yargs').argv;
@@ -23,7 +24,7 @@ const ENV_WPT = (ARG_ENV && ARG_ENV in web.task) ? web.task[ARG_ENV] : web.task.
  */
 gulp.task('init', function() {
   // :NOTE: not a standard design pattern of dirp-tree;
-  //        refer to their documentation for info
+  //        refer to its documentation for info
   return run.dirptree.generate(run.dirptree.config);
 });
 
@@ -32,7 +33,7 @@ gulp.task('init', function() {
  * * * * * * * * * * * * * * |/
  * @return {[stream]}
  */
-// :TODO: fix issue of multiple spawned instances of nodemon
+// :TODO: fix issue of multiple spawned instances of nodemon by using event listeners
 gulp.task('launch', run.sequence('lint',['pack','serve']));
 
 /* * * * * * * * * * * * * * | Linting with ES-Lint using 'airbnb-react'
@@ -58,7 +59,7 @@ gulp.task('lint', function() {
  */
 gulp.task('pack', function() {
 
-  // :TODO: bring following to their own task
+  // :TODO: bring following to their own tasks
   gulp.src(src.public.index)
     .pipe(gulp.dest(src.dest.root));
   gulp.src(src.public.assets)
@@ -73,7 +74,7 @@ gulp.task('pack', function() {
 /* * * * * * * * * * * * * * | Launches application & runs according to arguments;
  * gulp serve ...            | refer to tasks below for optional arguments
  * * * * * * * * * * * * * * |/
- * @return {[stream]} (?)
+ * @return {[nodemon-instance]}
  */
 gulp.task('serve', function() {
   return run.nodemon({

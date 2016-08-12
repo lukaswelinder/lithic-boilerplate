@@ -1,6 +1,8 @@
+'use strict';
+
 const merge = (...args) => [].concat(...args);
 
-const server = {
+const server_paths = {
   root: 'app/server',
   index: ['app/index.js'],
   js: {
@@ -10,7 +12,7 @@ const server = {
   ignore: ['app/server/data/db']
 };
 
-const public = {
+const public_paths = {
   root: 'app/public',
   index: ['app/public/index.html'],
   assets: ['app/public/assets/**/*'],
@@ -28,8 +30,8 @@ const public = {
 const app = {
   root: 'app',
   index: ['app/index.js'],
-  all: merge(server.js.all, public.jsx.all),
-  ignore: merge(server.ignore, public.ignore)
+  all: merge(server.js.all, public_paths.jsx.all),
+  ignore: merge(server.ignore, public_paths.ignore)
 };
 
 const dest = {
@@ -43,6 +45,6 @@ module.exports = {
   merge: merge,
   app: app,
   dest: dest,
-  server: server,
-  public: public
+  server: server_paths,
+  public: public_paths
 };

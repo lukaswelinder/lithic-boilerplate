@@ -1,3 +1,5 @@
+'use strict';
+
 const dirptree = require('dirp-tree');
 
 const server_file_tree = {
