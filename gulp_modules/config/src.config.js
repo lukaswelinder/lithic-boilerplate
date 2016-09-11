@@ -30,8 +30,8 @@ const public_paths = {
 const app = {
   root: 'app',
   index: ['app/index.js'],
-  all: merge(server.js.all, public_paths.jsx.all),
-  ignore: merge(server.ignore, public_paths.ignore)
+  all: merge(server_paths.js.all, public_paths.jsx.all),
+  ignore: merge(server_paths.ignore, public_paths.ignore)
 };
 
 const dest = {
